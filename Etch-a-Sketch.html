@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>Etch A Sketch </h1>
+    <h2> Keyboard buttons <span>&#8593;  &#8594;  &#8595;  &#8592; </span>to play. </h2>
+    
+
+    <div class="canvasWrap">
+      <canvas width="1600" height="1000" id="etch-a-sketch"></canvas>
+      <div class="buttons">
+        <button class="shake">Shake!</button>
+      </div>
+    </div>
+    <script src="./etch-a-sketch.js"></script>
+
+    <style>
+      body {
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        background: white;
+        background: url('./pexels-francesco-ungaro-281260.jpg');
+        background-size: cover;
+      }
+
+      h1{
+        color: white;
+        font-weight: 700;
+        font-size: 6rem;
+        text-align: center;
+        font-family: 'Architects Daughter';
+        margin-top: 60px;
+      }
+      h2 {
+        color: rgb(12, 26, 151);
+        font-weight: 300;
+        font-size: 3rem;
+        font-family: monospace;
+        margin-top: 5px;
+      }
+
+      span {
+        margin-top: 20px;
+        color: white;
+      }
+
+      canvas {
+        border: 20px solid #03a9f4;;
+        border-radius: 20px;
+        /* Set the width and height to half the actual size so it doesn't look pixelated */
+        width: 800px;
+        height: 500px;
+        margin-top: 40px;
+        background: white;
+      }
+
+      canvas.shake {
+        animation: shake 0.5s linear 1;
+      }
+
+      button.shake {
+        background: black;
+        border-radius: 8px;
+        opacity: 0.8;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        letter-spacing: 1.5px;
+        margin: 20px 0px 40px 0px;
+      }
+
+      @keyframes shake {
+        10%,
+        90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+
+        20%,
+        80% {
+          transform: translate3d(2px, 0, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+
+        40%,
+        60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+    </style>
+    <script src="./etch-a-sketch.js"></script>
+  </body>
+</html>
