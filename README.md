@@ -21,4 +21,4 @@ Have fun and relive your childhood with this interactive Etch A Sketch project.
 Completed
 
 ### **View My Project**
-https://github.com/Davidkrem/Etch-A-Sketch
+https://davidkrem.github.io/Etch-A-Sketch/
